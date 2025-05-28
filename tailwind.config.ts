@@ -22,24 +22,14 @@ export default {
         playfair: ['Playfair Display', 'serif'],
       },
 			colors: {
-        // Brand greens and oranges
-        primarygreen: {
-          DEFAULT: '#1B6D31', // dark green
-          dark: '#136022',    // darker green
-          light: '#B1DFBB',   // light green
-          muted: '#76B79D',   // muted/soft green
-        },
-        accentorange: {
-          DEFAULT: '#FC7A1E', // vivid orange
-          dark: '#C05E14',    // dark orange
-          light: '#FFD8A8',   // light orange
-          soft: '#FFE9D2',    // pale orange
-        },
-        background: '#FEFBF6', // very light cream background
-        // Fallbacks in case legacy classes exist (can reference new ones)
-        offwhite: '#FEFBF6',
-        primarybrown: '#1B6D31', // replaced with green for compatibility
-        accentburgundy: '#FC7A1E', // replaced with orange for compatibility
+				border: 'hsl(var(--border))',
+				input: 'hsl(var(--input))',
+				ring: 'hsl(var(--ring))',
+				background: 'hsl(var(--background))',
+				foreground: 'hsl(var(--foreground))',
+        primarybrown: '#491f1e',
+        accentburgundy: '#854953',
+        offwhite: '#f8f6f3',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

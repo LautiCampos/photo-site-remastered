@@ -6,19 +6,18 @@ import React from "react";
 const NavBar = () => {
   const isMobile = useIsMobile();
 
+  // Fade-down animation on mount
   return (
-    <header className="flex items-center justify-between px-6 py-3 bg-background shadow-md animate-fade-in-down border-b border-primarygreen/10">
-      <div className="text-sm font-bold font-playfair text-primarygreen tracking-wide">
-        Fábrica de Reciclaje Avellaneda
-      </div>
+    <header className="flex items-center justify-between px-6 py-3 bg-offwhite shadow-none animate-fade-in-down">
+      <div className="text-sm font-light text-primarybrown">Fábrica de Reciclaje Avellaneda</div>
       <div className="flex items-center gap-6">
         {!isMobile && (
-          <a href="#about" className="text-xs text-primarygreen hover:text-accentorange font-medium transition-all hover-scale">
+          <a href="#about" className="text-xs text-primarybrown hover:underline font-light transition-all duration-200 hover-scale">
             Sobre Nosotros
           </a>
         )}
         <button className="md:hidden p-2 -mr-2" aria-label="menu">
-          <Menu size={22} className="text-primarygreen" />
+          <Menu size={22} className="text-primarybrown" />
         </button>
       </div>
     </header>
