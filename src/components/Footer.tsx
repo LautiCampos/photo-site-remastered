@@ -2,20 +2,20 @@
 import { Mail, MapPin, Facebook, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => (
-  <footer id="contact" className="bg-offwhite pt-12 pb-4 border-t border-gray-200 mt-2">
+  <footer id="contact" className="bg-greenprimary-light pt-12 pb-4 border-t border-grayborder mt-2">
     <div className="container mx-auto grid md:grid-cols-2 gap-5 mb-7">
       <div>
-        <div className="text-2xl md:text-3xl font-playfair text-primarybrown mb-2">Contacta con Nosotros</div>
-        <div className="text-primarybrown font-light text-base mb-2">Fábrica de Reciclaje Avellaneda</div>
+        <div className="text-2xl md:text-3xl font-playfair text-greenprimary-dark mb-2">Contacta con Nosotros</div>
+        <div className="text-greenprimary-dark font-light text-base mb-2">Arplas</div>
       </div>
-      <div className="flex flex-col gap-2 items-start md:items-end text-primarybrown text-sm">
+      <div className="flex flex-col gap-2 items-start md:items-end text-greenprimary-dark text-sm">
         <div className="flex items-center gap-2">
-          <Mail className="w-4 h-4 mr-1" /> info@8bito.com
+          <Mail className="w-4 h-4 mr-1" /> info@arplas.com
         </div>
         <div className="flex items-center gap-2">
           <MapPin className="w-4 h-4 mr-1" /> Avellaneda, Provincia de Buenos Aires, Argentina
         </div>
-        <div className="flex gap-4 mt-2 text-accentburgundy">
+        <div className="flex gap-4 mt-2 text-orangeaccent-dark">
           <a href="#" aria-label="Facebook"><Facebook className="w-5 h-5 hover:scale-110 transition" /></a>
           <a href="#" aria-label="Twitter"><Twitter className="w-5 h-5 hover:scale-110 transition" /></a>
           <a href="#" aria-label="Instagram"><Instagram className="w-5 h-5 hover:scale-110 transition" /></a>
@@ -26,8 +26,8 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="text-center text-xs text-primarybrown/70 mt-2">
-      © 2025 by Fábrica de Reciclaje Avellaneda. Powered by Lovable.
+    <div className="text-center text-xs text-greenprimary-dark/70 mt-2">
+      © 2025 by Arplas. Powered by Lovable.
     </div>
   </footer>
 );
