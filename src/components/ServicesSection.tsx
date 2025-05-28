@@ -1,11 +1,14 @@
 
+const cardBase =
+  "border border-gray-300 rounded-lg bg-offwhite p-6 flex flex-col min-h-[180px] transition duration-200 hover:shadow-lg hover-scale";
+
 const ServicesSection = () => (
   <section id="services" className="bg-offwhite px-2 md:px-0 py-10 md:py-20">
     <div className="container mx-auto">
-      <h2 className="font-playfair text-primarybrown text-4xl md:text-5xl mb-10 text-center">
+      <h2 className="font-playfair text-primarybrown text-4xl md:text-5xl mb-10 text-center animate-fade-in">
         Nuestros Servicios
       </h2>
-      <div className="mb-8 text-center w-full">
+      <div className="mb-8 text-center w-full animate-fade-in [animation-delay:100ms]">
         <div className="text-md font-medium text-primarybrown">Lo Que Ofrecemos</div>
         <p className="text-primarybrown text-sm max-w-2xl mx-auto mt-2 mb-6">
           En nuestra fábrica, brindamos servicios de reciclaje de plástico y fabricación de bolsas, con un enfoque en la sostenibilidad y calidad.
@@ -14,7 +17,7 @@ const ServicesSection = () => (
       </div>
       <div className="grid md:grid-cols-2 gap-6">
         {/* Reciclaje */}
-        <div className="border border-gray-300 rounded-lg bg-offwhite p-6 flex flex-col min-h-[180px]">
+        <div className={cardBase + " animate-fade-in [animation-delay:0ms]"}>
           <div className="font-semibold text-primarybrown mb-2 text-lg">Reciclaje</div>
           <div className="text-xs font-bold text-primarybrown mb-1">Cuidado del Medio Ambiente</div>
           <p className="text-sm text-primarybrown">
@@ -22,7 +25,7 @@ const ServicesSection = () => (
           </p>
         </div>
         {/* Fabricación */}
-        <div className="border border-gray-300 rounded-lg bg-offwhite p-6 flex flex-col min-h-[180px]">
+        <div className={cardBase + " animate-fade-in [animation-delay:100ms]"}>
           <div className="font-semibold text-primarybrown mb-2 text-lg">Fabricación</div>
           <div className="text-xs font-bold text-primarybrown mb-1">Productos Sostenibles</div>
           <p className="text-sm text-primarybrown">
@@ -30,7 +33,7 @@ const ServicesSection = () => (
           </p>
         </div>
         {/* Personalización */}
-        <div className="border border-gray-300 rounded-lg bg-offwhite p-6 flex flex-col min-h-[180px]">
+        <div className={cardBase + " animate-fade-in [animation-delay:200ms]"}>
           <div className="font-semibold text-primarybrown mb-2 text-lg">Personalización</div>
           <div className="text-xs font-bold text-primarybrown mb-1">A Medida</div>
           <p className="text-sm text-primarybrown">
@@ -38,7 +41,7 @@ const ServicesSection = () => (
           </p>
         </div>
         {/* Innovación */}
-        <div className="border border-gray-300 rounded-lg bg-offwhite p-6 flex flex-col min-h-[180px]">
+        <div className={cardBase + " animate-fade-in [animation-delay:300ms]"}>
           <div className="font-semibold text-primarybrown mb-2 text-lg">Innovación</div>
           <div className="text-xs font-bold text-primarybrown mb-1">Tecnología Avanzada</div>
           <p className="text-sm text-primarybrown">
@@ -46,10 +49,10 @@ const ServicesSection = () => (
           </p>
         </div>
       </div>
-      <div className="mt-8 flex justify-center">
+      <div className="mt-8 flex justify-center animate-fade-in [animation-delay:400ms]">
         <a
           href="#contact"
-          className="px-8 py-2 text-sm rounded-full bg-accentburgundy text-white hover:brightness-90 transition-all shadow-sm"
+          className="px-8 py-2 text-sm rounded-full bg-accentburgundy text-white hover:brightness-90 transition-all shadow-sm hover-scale"
         >
           Ver Más
         </a>

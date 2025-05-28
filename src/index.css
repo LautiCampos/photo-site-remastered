@@ -99,3 +99,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.hover-scale {
+  transition: transform 0.16s cubic-bezier(.3,.7,.4,1);
+}
+.hover-scale:hover, .hover-scale:active, .hover-scale:focus {
+  transform: scale(1.07);
+}
