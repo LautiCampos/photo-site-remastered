@@ -36,6 +36,18 @@ const NavBar = () => {
           Servicios
         </button>
         <button
+          onClick={() => scrollToSection('consultas')}
+          className="text-xs text-greenprimary-dark dark:text-greenprimary-light hover:text-orangeaccent dark:hover:text-orangeaccent font-light transition-all duration-200 hover-scale"
+        >
+          Consultas
+        </button>
+        <button
+          onClick={() => scrollToSection('ubicacion')}
+          className="text-xs text-greenprimary-dark dark:text-greenprimary-light hover:text-orangeaccent dark:hover:text-orangeaccent font-light transition-all duration-200 hover-scale"
+        >
+          Ubicación
+        </button>
+        <button
           onClick={() => scrollToSection('contact')}
           className="text-xs text-greenprimary-dark dark:text-greenprimary-light hover:text-orangeaccent dark:hover:text-orangeaccent font-light transition-all duration-200 hover-scale"
         >
