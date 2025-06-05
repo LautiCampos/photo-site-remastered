@@ -1,5 +1,5 @@
 
-import { Mail, MapPin, Facebook, Twitter, Instagram } from "lucide-react";
+import { Mail, MapPin, Facebook, Twitter, Instagram, Phone } from "lucide-react";
 
 const Footer = () => {
   const sendEmail = () => {
@@ -8,6 +8,10 @@ const Footer = () => {
 
   const openMap = () => {
     window.open("https://maps.google.com/?q=Avellaneda,Buenos Aires,Argentina", "_blank");
+  };
+
+  const openWhatsApp = () => {
+    window.open("https://wa.me/5491234567890", "_blank");
   };
 
   return (
@@ -20,6 +24,9 @@ const Footer = () => {
         <div className="flex flex-col gap-2 items-start md:items-end text-greenprimary-dark dark:text-greenprimary-light text-sm">
           <button onClick={sendEmail} className="flex items-center gap-2 hover:text-orangeaccent transition-colors">
             <Mail className="w-4 h-4 mr-1" /> info@arplas.com
+          </button>
+          <button onClick={openWhatsApp} className="flex items-center gap-2 hover:text-orangeaccent transition-colors">
+            <Phone className="w-4 h-4 mr-1" /> WhatsApp: +54 9 11 2345-6789
           </button>
           <button onClick={openMap} className="flex items-center gap-2 hover:text-orangeaccent transition-colors">
             <MapPin className="w-4 h-4 mr-1" /> Avellaneda, Provincia de Buenos Aires, Argentina
