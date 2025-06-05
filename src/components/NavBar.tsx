@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-6 py-3 bg-greenprimary-light dark:bg-darkcard shadow-none animate-fade-in-down">
+    <header className="flex items-center justify-between px-6 py-3 bg-gradient-to-br from-greenprimary-light to-orangeaccent-light dark:from-greenprimary-dark dark:to-orangeaccent-dark shadow-none animate-fade-in-down">
       <div className="flex items-center gap-3">
         <img 
           src="/lovable-uploads/64df71ed-3a61-4be0-844b-86aec09f3b41.png" 

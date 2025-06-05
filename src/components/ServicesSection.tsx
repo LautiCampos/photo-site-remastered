@@ -22,7 +22,7 @@ const ServicesSection = () => {
             Reciclaje de plástico y fabricación sustentable de bolsas y materiales eco-amigables, con máxima calidad.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8 bg-transparent dark:bg-transparent">
           {/* Reciclaje */}
           <div className={cardBase + " animate-fade-in [animation-delay:0ms]"}>
             <div className="font-semibold text-greenprimary-dark dark:text-greenprimary-light mb-2 text-lg">Reciclaje</div>
